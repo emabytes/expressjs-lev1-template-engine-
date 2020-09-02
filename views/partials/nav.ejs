@@ -1,0 +1,17 @@
+<ul>
+    <%menu.forEach(elem =>{%>
+    <%if(elem.name == "Home"){%>
+    <li>
+        <a href="/">
+            <%=elem.name%>
+        </a>
+    </li>
+    <%}else{%>
+    <li>
+        <a href="/<%=elem.name%>">
+            <%=elem.name%>
+        </a>
+    </li>
+    <%}%>
+        <%})%>
+</ul>

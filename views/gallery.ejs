@@ -1,0 +1,16 @@
+<%-include('./partials/head')%>
+
+<body>
+    <%-include("./partials/nav")%>
+
+    <section>
+        <%galleryData.forEach(elem=>{%>
+        <div>
+            <img src="<%=elem.download_url%>" alt="">
+        </div>
+        <%})%>
+        </div>
+    </section>
+
+</body>
+</html>
